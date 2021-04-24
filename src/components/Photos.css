@@ -1,0 +1,54 @@
+.photos {
+  display: flex;
+  width: 100%;
+}
+
+.photos__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photos__container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+}
+
+.photos__container:hover .photos__info {
+  visibility: visible;
+}
+
+.photos__container > img {
+  max-width: 400px;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.photos__info {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  visibility: hidden;
+}
+
+.photos__info > p {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.photos__infoButtons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.photos__infoButtons > .MuiSvgIcon-root {
+  margin-right: 10px;
+  cursor: pointer;
+}

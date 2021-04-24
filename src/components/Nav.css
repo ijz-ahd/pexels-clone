@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__container {
+  display: flex;
+  flex: 0.3;
+  justify-content: space-evenly;
+  padding: 15px;
+  font-size: 18px;
+  color: gray;
+}
+
+.nav__container > h4 {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.nav__container > .active {
+  color: #0064f9;
+  border-bottom: 3px solid #0064f9;
+  padding-bottom: 10px;
+}
